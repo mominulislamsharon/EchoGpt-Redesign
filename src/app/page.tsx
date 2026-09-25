@@ -1,16 +1,16 @@
 import Hero from "@/components/landing/hero";
+import Features from "@/components/landing/features";
 import Navbar from "@/components/landing/navbar";
 
-const SECTIONS = ["features", "models", "pricing", "faq"] as const;
+const SECTIONS = ["models", "pricing", "faq"] as const;
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main id="main">
-        <section id="features" className="scroll-mt-16">
-          <Hero />
-        </section>
+        <Hero />
+        <Features />
 
         {SECTIONS.map((id) => (
           <section
