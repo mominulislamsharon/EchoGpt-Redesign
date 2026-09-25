@@ -1,6 +1,7 @@
 import Hero from "@/components/landing/hero";
 import Features from "@/components/landing/features";
 import Navbar from "@/components/landing/navbar";
+import Models from "@/components/landing/models";
 
 const SECTIONS = ["models", "pricing", "faq"] as const;
 
@@ -11,6 +12,7 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Features />
+        <Models />
 
         {SECTIONS.map((id) => (
           <section
